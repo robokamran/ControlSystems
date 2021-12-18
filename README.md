@@ -4,6 +4,7 @@
 A pack of control system algorithms implemented in C to be used in embedded systems. In this project, MATLAB is used as simulation platform. Pull-requests are welcome. If you find such implemetations useful, feel free to submit a *feature request* and I'll try to provide more sample implemetations (LQR, LQG, sliding-mode, etc.).
 
 > Please make sure that you have the latest version of [MinGW](https://www.mathworks.com/matlabcentral/fileexchange/52848-matlab-support-for-mingw-w64-c-c-compiler) installed in MATLAB so you can compile the C codes inside MATLAB.
+> Header file ***prototype.h*** is used as an interface between SIMULINK and C codes.
 
 ## Model Reference Adaptive Controller (MRAC)
 MRAC cotnroller based on MIT rule structure. References and controller topology can be found at:
@@ -28,4 +29,4 @@ Both MATLAB and C implement of the controller are provided here.
 - [Advanced Setpoints for Motion Systems](https://www.mathworks.com/matlabcentral/fileexchange/16352-advanced-setpoints-for-motion-systems)
 
 ## Second Order Filters and Lead-Lag
-Since high-pass (washout), low-pass, band-pass and band stop (notch) filters are commonly used in embedded systems, all simple implementations based on [second-order transfer functions](https://controlsystemsacademy.com/0024/0024.html) are provided and the formulation can be found [here](SecondOrderFilters.pdf). Also a lead-lag controller/filter is provided based on the [common theories](https://en.wikipedia.org/wiki/Lead%E2%80%93lag_compensator).
+Since high-pass (washout), low-pass, band-pass and band stop (notch) filters are commonly used in embedded systems, all simple implementations based on [second-order transfer functions](https://controlsystemsacademy.com/0024/0024.html) are provided and the formulation can be found [here](Classic Controllers/SecondOrderFilters.pdf). Also a lead-lag controller/filter is provided based on the [common theories](https://en.wikipedia.org/wiki/Lead%E2%80%93lag_compensator).
